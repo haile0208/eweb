@@ -1,0 +1,19 @@
+{% extends "main.html" %}
+{% load static%}
+{% block content%}
+
+<div class="login">
+    <div class = "login-box">
+        <h1>ĐĂNG NHẬP</h1>
+        <form>
+            <label>Tên đăng nhập</label>
+            <input type="text" placeholder="">
+            <label>Mật khẩu</label>
+            <input type="password" placeholder="">
+            <input type="button" value = "Đăng nhập">
+            </form>
+    </div>
+    <p class = "login-text">Hãy làm thành viên của mình! <a href="signup">Đăng ký!</a></p>
+</div>
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "main.html" %}
+{% load static%}
+{% block content%}
+
+    <main>
+        <div class = "product">
+            {% if item.image%} 
+            <img src ="{{item.image.url}}" alt="">
+            {% endif%}
+            <div class = "product-content">
+            <h2 class = "product-title">{{item.title}}</h2>
+            <p class = "product-description">{{item.description}} </p>
+            <p class = "product-price">{{item.price}}K</p>
+            <button class = "product-buy">Mua ngay!</button>
+            </div>
+        </div>
+    </main>
+
+{% endblock%}    

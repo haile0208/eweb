@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Not Brand</title>
+    <link rel = "stylesheet" href =" {% static 'styles/index.css' %} " >
+    <link rel = "stylesheet" href =" {% static 'styles/style.css' %} " >
+</head>
+<body>
+    {% include "navbar.html" %}
+
+    {% block content %}
+
+
+    {% endblock %}
+
+    {% include "footer.html"%}
+</body>
+</html>

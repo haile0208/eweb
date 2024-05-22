@@ -1,0 +1,25 @@
+{% extends "main.html" %}
+{% load static%}
+{% block content%}
+
+<div class="signup">
+    <div class = "signup-box">
+        <h1>ĐĂNG KÝ</h1>
+        <form>
+            <label>Họ Tên</label>
+            <input type="text" placeholder="">
+            <label>Email</label>
+            <input type="Email" placeholder="">
+            <label>Tên đăng nhập</label>
+            <input type="text" placeholder="">
+            <label>Mật khẩu</label>
+            <input type="password" placeholder="">
+            <label>Xác nhận mật khẩu</label>
+            <input type="password" placeholder="">
+            <input type="button" value = "Đăng ký">
+        </form>
+    </div>
+    <p>Bạn đã là thành viên? <a href="login">Đăng nhập!</a></p>
+</div>
+
+{% endblock %}  

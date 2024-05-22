@@ -1,0 +1,35 @@
+{% extends "main.html" %}
+{% load static%}
+{% block content%}
+
+    <div class ="banner">
+        <img src="{% static 'images/navi.jpg' %}"  alt="navi" class="banner-img" >
+    </div>
+
+    <p class = "paragraph-spacing"></p>
+        
+        <div id = "wrapper"></div>
+        <ul class="products">
+            {%for item in object_list%}
+
+            <li>
+                <div class="product-items">
+                    <div class="product-top">
+                        <a href="{{ item.get_absolute_url }}" class="product-thumb">
+                            {% if item.image%} 
+                            <img src ="{{item.image.url}}" alt="">
+                            {% endif%}
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="{{ item.get_absolute_url }}" class="product-name">{{ item.title }}</a>
+                        <div class="product-price">{{ item.price }}K</div>
+                    </div>
+                </div>
+            </li>
+            {%endfor%}
+
+        </ul>
+    </main>
+    <p class ="paragraph-spacing"></p>
+{% endblock %}
